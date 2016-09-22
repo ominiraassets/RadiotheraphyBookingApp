@@ -1,0 +1,18 @@
+extends layout
+
+block content  
+	h1 #{Title}
+	h2 New Schedule
+	form.navbar-form(action="/newschedule", method="post")
+		.form-group.input-group
+			input.form-control(type="date", name="scheduleid")
+			br
+			input.form-control(type="time", name="start")
+			br
+			input.form-control(type="time", name="end")
+			br
+			input.form-control(type="number", name="duration")
+			br
+			input.form-control(type="submit", value="Publish")
+			br
+    
